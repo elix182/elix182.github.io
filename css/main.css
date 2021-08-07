@@ -1,0 +1,60 @@
+:root {
+                --primary-color: #18227c/*#0d46a0*/;
+                --secondary-color: #78909c;
+                --accent-color: #FFFFFF;
+                --font-color: #000000;
+                --contrast-font-color: #FFFFFF;
+                --border-color: #000000;
+                --background-color: #eceff1;
+            }
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: var(--background-color);
+            }
+            .title {
+                background-color: var(--primary-color);
+                color: var(--contrast-font-color);
+                width: 100%;
+                text-align: center;
+                padding-top: 10pt;
+                padding-bottom: 5pt;
+            }
+            .title-name {
+                margin-top: 2pt;
+            }
+            .subtitle {
+                background-color: var(--secondary-color);
+                color: var(--contrast-font-color);
+                padding-left: 5pt;
+                padding-right: 5pt;
+                padding-top: 5pt;
+                padding-bottom: 5pt;
+            }
+            .profile-picture {
+                border-radius: 50%;
+                max-width: 100%;
+                max-height: 100%;
+                width: 100pt;
+                height: 140pt;
+                box-shadow: 1pt 1pt black;
+            }
+            .subsection-content {
+                padding-top: 5pt;
+            }
+            .item {
+                color: var(--primary-color);
+            }
+            .item-bold {
+                color: var(--primary-color);
+                font-weight: bold;
+            }
+            .item-details {
+                color: var(--secondary-color);
+                font-size: 11pt;
+            }
+            .progress-bar.primary-color {
+                background-color: var(--primary-color) !important;
+            }
+            .progress-bar.secondary-color {
+                background-color: var(--secondary-color) !important;
+            }

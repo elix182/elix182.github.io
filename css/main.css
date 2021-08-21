@@ -89,6 +89,7 @@
     background-color: Transparent;
     background-repeat: no-repeat;
     height: 20vh;
+    max-height: 50vh;
     border: none;
     cursor: pointer;
     overflow: hidden;

@@ -6,14 +6,15 @@
     --contrast-font-color: #FFFFFF;
     --border-color: #000000;
     --background-color: #eceff1;
+    --primary-gradient-color: #1564bf;
+    --primary-gradient-gradient-color: #003b8e;
 }
             body {
                 font-family: 'Roboto', sans-serif;
                 background-color: var(--background-color);
             }
             .title {
-                /*background-color: var(--primary-color);*/
-                background-image: linear-gradient(to bottom right, var(--primary-color), #1564bf);
+                background-image: linear-gradient(to bottom right, var(--primary-color), var(--primary-gradient-color));
                 color: var(--contrast-font-color);
                 width: 100%;
                 text-align: center;
@@ -101,7 +102,7 @@
 
 @media only screen and (max-device-width: 768px) { /* iPhone 12 */
     .mobile-only {
-        height: 120vh !important;
+        height: 100vh !important;
     }
 }
 
@@ -136,11 +137,15 @@
     outline: none;
 }
 
-.section-menu {
+.my-resume {
     background-color: var(--primary-color);
+    /*background-image: linear-gradient(to bottom right, var(--primary-gradient-color), var(--primary-gradient-gradient-color));*/
+}
+
+.section-menu {
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     
 }
 .section-menu-item {

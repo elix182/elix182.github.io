@@ -82,14 +82,13 @@
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    height: 30vh;
 }
 .link {
     font-size: 48pt;
     color: var(--primary-color);
     background-color: Transparent;
     background-repeat: no-repeat;
-    height: 20vh;
-    max-height: 50vh;
     border: none;
     cursor: pointer;
     overflow: hidden;
@@ -98,6 +97,12 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     transition: 0.3s;
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .links .mobile-only {
+        height: 70vh !important;
+    }
 }
 
 .link:hover {

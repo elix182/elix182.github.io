@@ -37,6 +37,23 @@
                 box-shadow: 2pt 2pt black;
                 transition: 0.3s;
             }
+            .header-title {
+                width: 100%;
+                text-align: center;
+                font-size: 24pt;
+            }
+            .header-title-contrast {
+                width: 100%;
+                text-align: center;
+                font-size: 24pt;
+                color: var(--contrast-font-color)
+            }
+            .footer-date {
+                width: 100%;
+                text-align: center;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
             /*.profile-picture:hover {
                 width: 180pt;
                 height: 180pt;
@@ -71,6 +88,7 @@
     color: var(--primary-color);
     background-color: Transparent;
     background-repeat: no-repeat;
+    height: 20vw;
     border: none;
     cursor: pointer;
     overflow: hidden;
@@ -90,11 +108,13 @@
 
 .link label {
     font-size: 12pt;
-    display: none;
+    opacity: 0.0;
+    display: block;
 }
 
 .link:hover label {
     font-size: 12pt;
+    opacity: 1.0;
     display: block;
 }
 
@@ -115,6 +135,7 @@
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    
 }
 .section-menu-item {
     font-size: 36pt;
@@ -139,11 +160,13 @@
 
 .section-menu-item label {
     font-size: 12pt;
-    display: none;
+    opacity: 0.0;
+    display: block;
 }
 
 .section-menu-item:hover label {
     font-size: 12pt;
+    opacity: 1.0;
     display: block;
 }
 

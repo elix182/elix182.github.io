@@ -99,9 +99,9 @@
     transition: 0.3s;
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
-    .links .mobile-only {
-        height: 70vh !important;
+@media only screen and (max-device-width: 768px) { /* iPhone 12 */
+    .mobile-only {
+        height: 120vh !important;
     }
 }
 

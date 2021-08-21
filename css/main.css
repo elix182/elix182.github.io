@@ -102,7 +102,7 @@
 
 @media only screen and (max-device-width: 768px) { /* iPhone 12 */
     .mobile-only {
-        height: 100vh !important;
+        height: 120vh !important;
     }
 }
 

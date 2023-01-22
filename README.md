@@ -1,2 +1,2 @@
 # elix182.github.io
-Hello There
+My presentation page, think of it as a resume of my professional work. Even when I have couple of projects on GitHub, they do not represent my actual work since most of it belongs to companies that I had worked on.

@@ -183,6 +183,7 @@
 
 .section {
     transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .hide {
@@ -201,6 +202,15 @@
     -ms-animation: fadein 0.3; /* Internet Explorer */
     -o-animation: fadein 0.3s; /* Opera < 12.1 */
     animation: fadein 0.3s;
+}
+
+@media print {
+    .hide {
+        display: block;
+    }
+    .close-button {
+        display: none;
+    }
 }
 
 @keyframes fadein {

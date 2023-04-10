@@ -11,11 +11,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
-        <!-- JS -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" async></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" async></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous" async></script>
-        <script src="js/main.js" async></script>
 		<title>Eliezer Pacheco Jiménez &ndash; Software Engineer</title>
 	</head>
 	<body>
@@ -46,7 +41,7 @@
             <div class="row">
                 <div class="col">
                     <p>
-                        Computer Engineer working as a Software developer with 6+ years of
+                        Computer Engineer working as a Software developer with 7+ years of
                         experience in designing, creating &amp; maintainig software system and
                         mobile applications. Proven ability to react to change and willingful
                         to help teammates with any troubles that they could had. Always working
@@ -64,25 +59,25 @@
             </div>
             <div class="row section-menu">
 				    <div class="col-md-3 col-sm-3">
-                        <button class="section-menu-item" onclick="showSection('#employmenthistory')">
+                        <button class="section-menu-item" onclick="toggleSection('#employmenthistory')">
                             <i class="bi bi-briefcase-fill"></i>
                             <label>Employment History</label>
                         </button>
 				    </div>
                     <div class="col-md-3 col-sm-3">
-                        <button class="section-menu-item" onclick="showSection('#education')">
+                        <button class="section-menu-item" onclick="toggleSection('#education')">
                             <i class="bi bi-book"></i>
                             <label>Education</label>
                         </button>
 				    </div>
                     <div class="col-md-3 col-sm-3">
-                        <button class="section-menu-item" onclick="showSection('#skills')">
+                        <button class="section-menu-item" onclick="toggleSection('#skills')">
                             <i class="bi bi-card-checklist"></i>
                             <label>Skills</label>
                         </button>
 				    </div>
                     <div class="col-md-3 col-sm-3">
-                        <button class="section-menu-item" onclick="showSection('#language')">
+                        <button class="section-menu-item" onclick="toggleSection('#language')">
                             <i class="bi bi-translate"></i>
                             <label>Language</label>
                         </button>
@@ -93,8 +88,8 @@
         <br />
 		<div class="container">
             <div class="sections">
-			<div class="row">
-				<div class="col">
+			    <div class="row">
+				    <div class="col">
                         <div class="card section hide" id="education">
                             <div class="card-body">
                                 <div class="card-title">
@@ -138,6 +133,11 @@
                                             </ul>
                                         </li>
                                     </ul>
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <button type="button" class="btn btn-primary" onclick="hideSection('#education')">
+                                        Close
+                                    </button>
                                 </div>
                                 </div>
                             </div>
@@ -189,6 +189,7 @@
                                                 <li>ASP.NET Core</li>
                                                 <li>Express.js</li>
                                                 <li>React</li>
+                                                <li>React Native</li>
                                                 <li>ASP.NET</li>
                                                 <li>Vue.js</li>
                                                 <li>AngularJS</li>
@@ -201,9 +202,15 @@
                                                 <li>MongoDB</li>
                                                 <li>MySQL</li>
                                                 <li>LaTeX</li>
+                                                <li>Docker</li>
                                             </ul>
                                         </div>
                                     </div>
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <button type="button" class="btn btn-primary" onclick="hideSection('#skills')">
+                                        Close
+                                    </button>
                                 </div>
                                 </div>
                             </div>
@@ -245,6 +252,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <br />
+                                <div style="display: flex; justify-content: center;">
+                                    <button type="button" class="btn btn-primary" onclick="hideSection('#language')">
+                                        Close
+                                    </button>
                                 </div>
                                 </div>
                             </div>
@@ -289,11 +302,23 @@
                                     </li>
                                     <li>
                                         Designed and integrated a workflow for replacing the Scanning Third-party partnership with Dealer Services Network (DSN) 
-                                        services for the state of Pennsylvania in the Multi-Tenant application.
+                                        services for the state of Pennsylvania in the Multi-Tenant application, along with maintaining the related software components 
+                                        of this integration.
                                     </li>
                                     <li>
                                         Designed and integrated successfully AAMVA's Driver License Data Verification into the existing workflow of the state of 
                                         Pennsylvania in the Multi-Tenant application.
+                                    </li>
+                                    <li>
+                                        Implemented the company's solution for complying with the GLBA Law and two-step authentication on the Pennsylvania Titling application.
+                                    </li>
+                                    <li>
+                                        Proposed and implemented a new development workflow on the team using Git best practices as Git flow, cherry-picking and better 
+                                        use of the CI/CD tool used by the business unit (Concourse), training the team along the way.
+                                    </li>
+                                    <li>
+                                        Proposed, designed and implemented a scheduler application for sending reports in an automated fashion, reducing the amount of time 
+                                        used by the development team on production support and customer support.
                                     </li>
                                 </ul>
                                 <h6 class="item-bold">
@@ -317,6 +342,34 @@
                                     Also worked creating an API as microservives for a reward system implemented on a local restaurant and maintaining 
                                     legacy mobile applications like Biometric time attendance clock app, creating the new core for the facial recognition 
                                     feature using TensorFlow lite running on Android.
+                                    <ul>
+                                        <li>
+                                            Maintained the ERP financial reporting mobile app of the company.
+                                        </li>
+                                        <li>
+                                            Designed and implemented alerts and scheduled reports through notifications on the ERP Financial reporting mobile 
+                                            app of the company.
+                                        </li>
+                                        <li>
+                                            Designed and implemented a Widget extension of the iOS app of the ERP Financial reporting app.
+                                        </li>
+                                        <li>
+                                            Implemented the Incidences report feature on the Security Guards mobile app.
+                                        </li>
+                                        <li>
+                                            Designed and implemented a rewards system on the ERP application of the company.
+                                        </li>
+                                        <li>
+                                            Implemented a new facial recognition core on the biometric time attendance clock app, using Tensorflow lite.
+                                        </li>
+                                        <li>
+                                            Designed and implemented a Drone survillance system, creating a monitoring and scheduling web app along with an Android 
+                                            application integrating the usage of the DJI SDK and the therefore mentioned web app.
+                                        </li>
+                                        <li>
+                                            Helped demoing android mobile apps for potential customers.
+                                        </li>
+                                    </ul>
                                 </p>
                                 <h6 class="item-bold">
                                     Android & iOS Developer, Certuit Software S. de R.L de C.V<br />
@@ -337,13 +390,43 @@
                                     Later developed modules for the web application running on Symfony 2. Also developed an android mobile application in 
                                     which the app searches for the nearest gas stations (just in México) along with the API
                                     for the gas stations repository using Express.js and a web page in Angular 6 for the gas station owner.
+                                    <ul>
+                                        <li>
+                                            Helped in the development of the hardware module of the Sinercia product, using Arduino and a usb interface for android.
+                                        </li>
+                                        <li>
+                                            Helped in the development and further maintenance of the mobile app for registering the production count of an employee.
+                                        </li>
+                                        <li>
+                                            Designed and implemented the Competences module on the Web app of the Sinercia product.
+                                        </li>
+                                        <li>
+                                            Designed and implemented the Tools module on the Web app of the Sinercia product.
+                                        </li>
+                                        <li>
+                                            Designed and implemented the Notification module of the Web app of the Sinercia product
+                                        </li>
+                                        <li>
+                                            Designed and implemented GApp, the mobile application that shows you the nearest gas stations on México using android and express.js 
+                                            techbnologies.
+                                        </li>
+                                    </ul>
                                 </p>
+                            </div>
+                            <div style="display: flex; justify-content: center;">
+                                <button type="button" class="btn btn-primary" onclick="hideSection('#employmenthistory')">
+                                    Close
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row"><br /></div>
+            <div class="row">
+                <div class="col">
+                    <br />
+                </div>
+            </div>
             </div>
 		</div>
         <div class="container">
@@ -352,37 +435,41 @@
                     <h5 class="header-title">Contact</h5>
                 </div>
             </div>
-            <div class="row links mobile-only">
-				    <div class="col-md-4 col-sm-4">
-                        <button class="link" onclick="openUrl('https://github.com/elix182');">
-                            <i class="bi bi-github"></i>
-                            <label>GitHub</label>
-                        </button>
-				    </div>
-				    <div class="col-md-4 col-sm-4">
-                        <button class="link" onclick="openUrl('https://www.linkedin.com/in/eliezer-pacheco');">
-                            <i class="bi bi-linkedin"></i>
-                            <label>LinkedIn</label>
-                        </button>
-				    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <button class="link" onclick="openUrl('mailto:eliezerpacheco30@gmail.com');">
-                            <i class="bi bi-envelope"></i>
-                            <label>Email</label>
-                        </button>
-				    </div>
+            <div class="row links">
+				<div class="col-md-4 col-sm-4">
+                    <button class="link" onclick="openUrl('https://github.com/elix182');" title="https://github.com/elix182">
+                        <i class="bi bi-github"></i>
+                        <label>GitHub</label>
+                    </button>
+				</div>
+				<div class="col-md-4 col-sm-4">
+                    <button class="link" onclick="openUrl('https://www.linkedin.com/in/eliezer-pacheco');" title="https://www.linkedin.com/in/eliezer-pacheco">
+                        <i class="bi bi-linkedin"></i>
+                        <label>LinkedIn</label>
+                    </button>
+				</div>
+                <div class="col-md-4 col-sm-4">
+                    <button class="link" onclick="openUrl('mailto:eliezerpacheco30@gmail.com');" title="mailto:eliezerpacheco30@gmail.com">
+                        <i class="bi bi-envelope"></i>
+                        <label>Email</label>
+                    </button>
+				</div>
             </div>
         </div>
 	</body>
 	<footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col footer-date">
                     <br />
-                    <label class="footer-date" id="date"></label>
+                    2023 &dash; Eliezer Pacheco
                     <br />
                 </div>
             </div>
         </div>
 	</footer>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </html>
